@@ -1,0 +1,12 @@
+version: '3.6'
+services:
+  postgres_data:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - data_db:/var/lib/postgresql/data
+volumes:
+  data_db:
