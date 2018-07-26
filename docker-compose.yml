@@ -7,6 +7,18 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - data_db:/var/lib/postgresql/data
+      - postgres_db:/var/lib/postgresql/data
+  wilayah_service:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=wilayah_service
+      - MYSQL_PASSWORD=wilayah_service
+      - MYSQL_DATABASE=wilayah_indonesia
+    volumes:
+      - wilayah_service_data:/var/lib/mysql
+    ports:
+      - 3306:3306
 volumes:
-  data_db:
+  postgres_db:
+  wilayah_service_data:

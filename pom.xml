@@ -11,6 +11,7 @@
     <modules>
         <module>sample-service</module>
         <module>config-server</module>
+        <module>wilayah-service</module>
     </modules>
 
     <name>Springboot Parent Project for Spring Cloud Microservices</name>

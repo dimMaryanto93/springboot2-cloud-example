@@ -7,7 +7,7 @@
     <packaging>jar</packaging>
     <version>1.0</version>
 
-    <name>Spring Cloud Config Client</name>
+    <name>Spring Cloud 2 - Config Client Example</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
