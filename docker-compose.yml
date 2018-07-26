@@ -1,24 +1,27 @@
 version: '3.6'
 services:
-  postgres_data:
+  nasabah_service:
     image: postgres:9.6
     environment:
-      - POSTGRES_PASSWORD=postgres
+    - POSTGRES_PASSWORD=postgres
+    - POSTGRES_USER=nasabah_service
+    - POSTGRES_PASSWORD=nasabah_service
+    - POSTGRES_DB=nasabah
     ports:
-      - 5432:5432
+    - 5432:5432
     volumes:
-      - postgres_db:/var/lib/postgresql/data
+    - nasabah_service_data:/var/lib/postgresql/data
   wilayah_service:
     image: mysql:5.7
     environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_USER=wilayah_service
-      - MYSQL_PASSWORD=wilayah_service
-      - MYSQL_DATABASE=wilayah_indonesia
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_USER=wilayah_service
+    - MYSQL_PASSWORD=wilayah_service
+    - MYSQL_DATABASE=wilayah_indonesia
     volumes:
-      - wilayah_service_data:/var/lib/mysql
+    - wilayah_service_data:/var/lib/mysql
     ports:
-      - 3306:3306
+    - 3306:3306
 volumes:
-  postgres_db:
+  nasabah_service_data:
   wilayah_service_data:
