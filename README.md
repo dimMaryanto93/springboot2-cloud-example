@@ -12,5 +12,5 @@ Belajar spring-cloud for microservice architecture.
 | :--------             | :-------                                                  |
 | config-server         | [localhost:8888](http://localhost:8888)                   |
 | sample-service        | [localhost:8080](http://localhost:8080)                   |
-| wilayah-service       | [localhost:7000,7001...](http://localhost:1000)           |
-| nasabah-service       | [localhost:2000,2001,2002...](http://localhost:2000)      |
+| wilayah-service       | [localhost:7000,7001...](http://localhost:6000)           |
+| nasabah-service       | [localhost:6000,6001,6002...](http://localhost:6000)      |
