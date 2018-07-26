@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface WilayahRepository {
 
     @GetMapping("/provinsi/{id}")
-    public ResponseEntity<Provinsi> provinsiById(@PathVariable("id") Long provinsiId);
+    ResponseEntity<Provinsi> provinsiById(@PathVariable("id") Long provinsiId);
 }
