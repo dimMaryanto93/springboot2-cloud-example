@@ -13,6 +13,7 @@
         <module>config-server</module>
         <module>wilayah-service</module>
         <module>nasabah-service</module>
+        <module>eureka-naming-server</module>
     </modules>
 
     <name>Springboot Parent Project for Spring Cloud Microservices</name>
