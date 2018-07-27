@@ -1,4 +1,4 @@
-package com.maryanto.dimas.example.repository;
+package com.maryanto.dimas.example.proxy;
 
 import com.maryanto.dimas.example.entity.Kecamatan;
 import org.springframework.data.repository.PagingAndSortingRepository;

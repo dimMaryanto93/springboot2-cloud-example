@@ -2,7 +2,7 @@ package com.maryanto.dimas.example.api;
 
 import com.maryanto.dimas.example.dto.Provinsi;
 import com.maryanto.dimas.example.entity.Nasabah;
-import com.maryanto.dimas.example.repository.WilayahRepository;
+import com.maryanto.dimas.example.proxy.WilayahProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +17,7 @@ import static org.springframework.http.ResponseEntity.ok;
 public class NasabahController {
 
     @Autowired
-    private WilayahRepository repository;
+    private WilayahProxy repository;
 
     @GetMapping("/{id}")
     public ResponseEntity<?> getNasabah(@PathVariable("id") Long id) {
