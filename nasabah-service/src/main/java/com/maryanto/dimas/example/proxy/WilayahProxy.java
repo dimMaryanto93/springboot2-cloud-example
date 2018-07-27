@@ -7,10 +7,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "wilayah-service")
-@RibbonClient("wilayah-service")
+@FeignClient(name = "api-gateway-zuul")
+@RibbonClient(name = "wilayah-service")
 public interface WilayahProxy {
 
-    @GetMapping("/provinsi/{id}")
+    @GetMapping("/wilayah-service/provinsi/{id}")
     ResponseEntity<Provinsi> provinsiById(@PathVariable("id") Long provinsiId);
 }
