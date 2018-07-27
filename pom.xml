@@ -14,6 +14,7 @@
         <module>wilayah-service</module>
         <module>nasabah-service</module>
         <module>eureka-naming-server</module>
+        <module>api-gateway-zuul</module>
     </modules>
 
     <name>Springboot Parent Project for Spring Cloud Microservices</name>
