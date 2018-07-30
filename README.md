@@ -37,3 +37,9 @@ public interface WilayahProxy {
 ```
 
 Akan secara langsung di forward ke service wilayah.
+
+## Api gateway with `netflix-zuul`
+
+Berikut ini flow api gateway:
+
+![zuul api gateway](imgs/api-gateway.png)
