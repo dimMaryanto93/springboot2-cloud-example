@@ -15,6 +15,7 @@ Belajar spring-cloud for microservice architecture.
 | wilayah-service       | [localhost:7000,7001...](http://localhost:6000)           |
 | nasabah-service       | [localhost:6000,6001,6002...](http://localhost:6000)      |
 | eureka-naming-server  | [localhost:8671](http://localhost:8671)                   |
+| zuul api-gateway      | [localhost:8765](http://localhost:8765)
 
 ## Proxy with feign & ribbon
 
